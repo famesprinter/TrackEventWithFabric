@@ -25,7 +25,10 @@ class ViewController: UIViewController {
             
         eventBtn.rx.action = Action {
             print("Event Button did tap : ))")
-            Crashlytics.sharedInstance().crash()
+//            Crashlytics.sharedInstance().crash()
+            Answers.logCustomEvent(withName: "Tap Event Button",
+                                   customAttributes: ["Name": "Hello",
+                                                      "count": 1])
             return Observable.empty()
         }
     }
