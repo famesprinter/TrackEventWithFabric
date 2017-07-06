@@ -8,17 +8,26 @@
 
 import UIKit
 import RxSwift
+import RxCocoa
+import Action
+import Crashlytics
 
 class ViewController: UIViewController {
-
+    // MARK: - IBOutlet
+    @IBOutlet weak var eventBtn: UIButton!
+    
+    // MARK: - Variable
+    let disposeBag = DisposeBag()
+    
+    // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+            
+        eventBtn.rx.action = Action {
+            print("Event Button did tap : ))")
+            Crashlytics.sharedInstance().crash()
+            return Observable.empty()
+        }
     }
 }
 
