@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		81825572FC6328F6A9004C89 /* Pods_TrackEventWithFabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F05DD855B610E938384AE165 /* Pods_TrackEventWithFabric.framework */; };
 		FB5AA4181F0DE8F000D36104 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5AA4171F0DE8F000D36104 /* AppDelegate.swift */; };
 		FB5AA41A1F0DE8F000D36104 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5AA4191F0DE8F000D36104 /* ViewController.swift */; };
 		FB5AA41D1F0DE8F000D36104 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB5AA41B1F0DE8F000D36104 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E339AC2EA9B2F7418152444 /* Pods-TrackEventWithFabric.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackEventWithFabric.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrackEventWithFabric/Pods-TrackEventWithFabric.release.xcconfig"; sourceTree = "<group>"; };
+		78E9BCE6F0127994077EA2CB /* Pods-TrackEventWithFabric.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackEventWithFabric.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TrackEventWithFabric/Pods-TrackEventWithFabric.debug.xcconfig"; sourceTree = "<group>"; };
+		F05DD855B610E938384AE165 /* Pods_TrackEventWithFabric.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrackEventWithFabric.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB5AA4141F0DE8F000D36104 /* TrackEventWithFabric.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrackEventWithFabric.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB5AA4171F0DE8F000D36104 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB5AA4191F0DE8F000D36104 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81825572FC6328F6A9004C89 /* Pods_TrackEventWithFabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5400B0152BBBD1F83D644290 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F05DD855B610E938384AE165 /* Pods_TrackEventWithFabric.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		715FF4A025C84DA1B841DFBA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				78E9BCE6F0127994077EA2CB /* Pods-TrackEventWithFabric.debug.xcconfig */,
+				4E339AC2EA9B2F7418152444 /* Pods-TrackEventWithFabric.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FB5AA40B1F0DE8F000D36104 = {
 			isa = PBXGroup;
 			children = (
 				FB5AA4161F0DE8F000D36104 /* TrackEventWithFabric */,
 				FB5AA4151F0DE8F000D36104 /* Products */,
+				715FF4A025C84DA1B841DFBA /* Pods */,
+				5400B0152BBBD1F83D644290 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB5AA4261F0DE8F000D36104 /* Build configuration list for PBXNativeTarget "TrackEventWithFabric" */;
 			buildPhases = (
+				BF98CFEAD61854CA1190D1D5 /* [CP] Check Pods Manifest.lock */,
 				FB5AA4101F0DE8F000D36104 /* Sources */,
 				FB5AA4111F0DE8F000D36104 /* Frameworks */,
 				FB5AA4121F0DE8F000D36104 /* Resources */,
+				18318C3BB6DB108A9AE48919 /* [CP] Embed Pods Frameworks */,
+				65AD6A4F4E2BD8EC6030DCB3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18318C3BB6DB108A9AE48919 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrackEventWithFabric/Pods-TrackEventWithFabric-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65AD6A4F4E2BD8EC6030DCB3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrackEventWithFabric/Pods-TrackEventWithFabric-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF98CFEAD61854CA1190D1D5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FB5AA4101F0DE8F000D36104 /* Sources */ = {
@@ -258,6 +333,7 @@
 		};
 		FB5AA4271F0DE8F000D36104 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78E9BCE6F0127994077EA2CB /* Pods-TrackEventWithFabric.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TrackEventWithFabric/Info.plist;
@@ -270,6 +346,7 @@
 		};
 		FB5AA4281F0DE8F000D36104 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E339AC2EA9B2F7418152444 /* Pods-TrackEventWithFabric.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TrackEventWithFabric/Info.plist;
